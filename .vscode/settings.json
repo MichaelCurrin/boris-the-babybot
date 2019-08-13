@@ -1,6 +1,6 @@
 {
-    "terminal.integrated.cwd": "boristhebabybot",
-    "code-runner.cwd": "boristhebabybot",
+    "terminal.integrated.cwd": "boris",
+    "code-runner.cwd": "boris",
 
     "python.pythonPath": "venv/bin/python",
 
