@@ -1,34 +1,27 @@
+#!/usr/bin/env python
 """
 Main application file.
-
-This should be named after the project (or as shorter version), with no hyphens
-or underscores. This could be named main.py instead.
-
-If this is named __main__.py, then python will allow you to do the following:
-$ python pyprojecttemplate/
-...
-
-Note that even if __main__.py is an executable, you cannot execute its
-containing directory as you'll get an error.
 """
-### Imports ###
+import os
 import sys
 
+import lib.twitter
 
-### Globals constants ###
-
-SOME_GLOBAL = "My global"
-
-### Functions ###
 
 def main(args):
     """
     Main command-line function.
     """
-    print("It works!")
-    print("Args:")
-    print(args)
-    print(SOME_GLOBAL)
+    if set(args) & {'-h', '--help'}:
+        name = os.path.basename(__file__)
+        print(f"Usage: ./{name} [MESSAGE] [-h]", file=sys.stderr)
+        return None
+
+    if args:
+        msg = args[0]
+    else:
+        msg = None
+    lib.twitter.tweet(msg)
 
 
 if __name__ == '__main__':
