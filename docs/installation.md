@@ -24,3 +24,23 @@ Follow instructions in this [gist](https://gist.github.com/MichaelCurrin/3a4d14b
 
 
 You can now continue to the [Usage](/docs/usage.md) doc.
+
+
+## Configuration
+
+
+```bash
+$ cd boris/etc
+```
+
+Setup config file.
+
+```bash
+$ cp config.tmpl.yml config.local.yml
+```
+
+Create Tweet messaging content. Add one or more lines to each.
+
+```bash
+$ touch hashtags.txt statuses.txt
+```
