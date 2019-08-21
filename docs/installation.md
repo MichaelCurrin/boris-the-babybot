@@ -39,8 +39,25 @@ Setup config file.
 $ cp config.tmpl.yml config.local.yml
 ```
 
-Create Tweet messaging content. Add one or more lines to each.
+Create Tweet messaging content.
 
 ```bash
-$ touch hashtags.txt statuses.txt
+$ touch statuses.txt hashtags.txt
 ```
+
+Add one or more lines to statuses so you have a sentence to tweet. Optionally add one or more lines to hashtags file, which will be added after the sentence.
+
+For example:
+
+- _statuses.txt_
+    ```
+    This tweet was created by a bot.
+    I like using the Twitter API.
+    I tweet therefore I am.
+    ```
+- _hashtags.txt_
+    ```
+    #tweepy
+    #python
+    #twitterapi #python
+    ```
