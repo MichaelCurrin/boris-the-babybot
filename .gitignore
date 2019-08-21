@@ -4,4 +4,6 @@ __pycache__/
 # Python virtual environment.
 venv
 
-# TODO: See README.md for instructions on filling this section.
+boris/etc/config.local.yml
+boris/etc/hashtags.txt
+boris/etc/statuses.txt
