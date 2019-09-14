@@ -7,3 +7,4 @@ venv
 boris/etc/config.local.yml
 boris/etc/hashtags.txt
 boris/etc/statuses.txt
+boris/etc/emojis.txt
