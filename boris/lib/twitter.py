@@ -25,15 +25,43 @@ def get_api_connection(consumer_key, consumer_secret, access_key,
 def make_msg():
     messaging = CONF['messaging']
 
-    rand_status = random.choice(messaging['statuses'])
+    status = random.choice(messaging['statuses'])
+
+    msg_pieces = [status]
 
     if random.random() > 0.5:
-        rand_hashtag = random.choice(messaging['hashtags'])
-        msg = " ".join((rand_status, rand_hashtag))
-    else:
-        msg = rand_status
+        emoji = random.choice(messaging['emojis'])
+        msg_pieces.append(emoji)
 
-    return msg
+    if random.random() > 0.5:
+        hashtag = random.choice(messaging['hashtags'])
+        msg_pieces.append(hashtag)
+
+    msg = " ".join(msg_pieces)
+
+    return msg.strip()
+
+def show_statuses():
+    """
+    Note based on printing of statuses - some emojis seem to have a backspace
+    character builtin so the following character will be hidden unless there is
+    a space between them. This only seems to be an issue in the console - when
+    copying the console text to Twitter status box then it expands again.
+    Some characters like 🇧🇼 show as block characters in the terminal.
+    """
+    messaging = CONF['messaging']
+    for s in messaging['statuses']:
+        print(s)
+        print(repr(s))
+        print()
+
+
+def show_emojis():
+    messaging = CONF['messaging']
+    for e in messaging['emojis']:
+        print(e)
+        print(repr(e))
+        print()
 
 
 def _update_status(msg):
@@ -50,11 +78,20 @@ def _update_status(msg):
     return status
 
 
-def tweet(msg=None):
+def tweet(msg=None, dry_run=False):
     if not msg:
         msg = make_msg()
+    print("Message: ")
+    print(repr(msg))
+    print()
 
-    return _update_status(msg)
+    if dry_run:
+        print("Skipping tweet step.")
+    else:
+        print("Updating timeline.")
+        _update_status(msg)
+
+    return msg
 
 
 if __name__ == '__main__':
