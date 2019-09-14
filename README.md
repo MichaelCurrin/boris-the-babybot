@@ -29,4 +29,6 @@ You do need a Twitter developer account and API credentials in order to use this
 
 You _are_ allowed by Twitter to make a bot account, but one that follows Twitter's restrictions.
 
-Your bot can do things like tweet on a schedule, retweet other tweets (selectively but not in bulk) or repost external data or links such as blog posts. But you cannot message users, if they have not explicitly given permission (such as by messaging your account or opting in within a website/app).
+Your bot can do things like tweet on a schedule, retweet other tweets (selectively but not in bulk) or repost external data or links such as blog posts. But you cannot use your bot to create tweets to users or reply to users, unless the users have explicitly given permission (such as by messaging your account or opting in within a website/app).
+
+If you do want to message other users, you can of course use your Twitter bot account in the browser without using the API.
