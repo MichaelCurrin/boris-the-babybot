@@ -1,7 +1,7 @@
 # Boris the BabyBot
 > Create and post tweets using the Twitter API.
 
-This project could be modified easily to post for bot accounts but has been developed to tweet as the [Boris The BabyBoy](https://twitter.com/boristhebabybot) Twitter account.
+This project could be modified easily to post for bot accounts but has been developed to tweet as the [Boris The BabyBot](https://twitter.com/boristhebabybot) Twitter account.
 
 
 ## Example Usage
