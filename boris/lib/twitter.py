@@ -65,9 +65,6 @@ def show_emojis():
 
 
 def _update_status(msg):
-    print("Tweet message:")
-    print(repr(msg))
-
     # TODO: Use class for context and reuse?
     api = get_api_connection(**CONF['twitter_credentials'])
 
