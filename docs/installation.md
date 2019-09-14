@@ -1,23 +1,6 @@
 # Installation
 
 
-## Install OS-level dependencies
-
-_TODO: Include any instructions or commands to install a package or application, other than Python. Example below._
-
-**Mac OS**
-
-```bash
-$ brew install ...
-```
-
-**Ubuntu/Debian**
-
-```bash
-$ sudo apt install ...
-```
-
-
 ## Setup a Python 3 virtual environment
 
 Follow instructions in this [gist](https://gist.github.com/MichaelCurrin/3a4d14ba1763b4d6a1884f56a01412b7).
@@ -42,12 +25,10 @@ $ cp config.tmpl.yml config.local.yml
 Create Tweet messaging content.
 
 ```bash
-$ touch statuses.txt hashtags.txt
+$ touch statuses.txt hashtags.txt emojis.txt
 ```
 
-Add one or more lines to statuses so you have a sentence to tweet. Optionally add one or more lines to hashtags file, which will be added after the sentence.
-
-For example:
+Add one or more lines to statuses so you have a sentence to tweet.
 
 - _statuses.txt_
     ```
@@ -55,9 +36,19 @@ For example:
     I like using the Twitter API.
     I tweet therefore I am.
     ```
+
+Optionally add one or more lines to hashtags file and a emojis file. These will be added after the sentence, with random chance of a hashtag piece being added and a random chance of an emoji piece being added.
+
 - _hashtags.txt_
     ```
     #tweepy
     #python
     #twitterapi #python
+    ```
+- _emojis.txt_
+    ```
+    🐯
+    🐦
+    🤖
+    🎙️
     ```
