@@ -42,6 +42,7 @@ def load_conf():
         hashtags=hashtags,
         emojis=emojis,
     )
+    conf['website'] = 'https://boristhebabybot.org'
 
     return conf
 
