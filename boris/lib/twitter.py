@@ -44,6 +44,7 @@ def make_msg():
 
     return msg.strip()
 
+
 def show_statuses():
     """
     Note based on printing of statuses - some emojis seem to have a backspace
