@@ -3,8 +3,9 @@ Library initialization module.
 """
 import datetime
 import json
-import tweepy
 import os
+
+import tweepy
 
 import yaml
 
