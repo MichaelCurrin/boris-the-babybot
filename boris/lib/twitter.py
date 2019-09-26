@@ -27,17 +27,20 @@ def make_msg():
 
     status = random.choice(messaging['statuses'])
 
-    msg_pieces = [status]
+    # For sales pitch tweets, don't use add-ons.
+    if CONF['website'] in status:
+        msg = status
+    else:
+        msg_pieces = [status]
 
-    if random.random() > 0.5:
-        emoji = random.choice(messaging['emojis'])
-        msg_pieces.append(emoji)
+        if random.random() > 0.5:
+            emoji = random.choice(messaging['emojis'])
+            msg_pieces.append(emoji)
+        if random.random() > 0.5:
+            hashtag = random.choice(messaging['hashtags'])
+            msg_pieces.append(hashtag)
 
-    if random.random() > 0.5:
-        hashtag = random.choice(messaging['hashtags'])
-        msg_pieces.append(hashtag)
-
-    msg = " ".join(msg_pieces)
+        msg = " ".join(msg_pieces)
 
     return msg.strip()
 
