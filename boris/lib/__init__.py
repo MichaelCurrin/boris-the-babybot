@@ -17,7 +17,7 @@ VAR_DIR = os.path.join(APP_DIR, 'var')
 
 def read_text(path):
     """
-    Read and clean text from a path to a text file.
+    Read a file and return cleaned rows of content as a list.
     """
     with open(path) as f_in:
         lines = f_in.read().splitlines()
@@ -31,7 +31,7 @@ def load_conf():
     """
     yaml_path = os.path.join(ETC_DIR, 'config.local.yml')
     with open(yaml_path) as f_in:
-        conf = yaml.load(f_in, Loader=yaml.Loader)
+        conf = yaml.safe_load(f_in)
 
     statuses = read_text(os.path.join(ETC_DIR, 'statuses.txt'))
     hashtags = read_text(os.path.join(ETC_DIR, 'hashtags.txt'))
