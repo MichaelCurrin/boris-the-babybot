@@ -11,10 +11,20 @@ from . import load_conf
 CONF = load_conf()
 
 
-def get_api_connection(consumer_key, consumer_secret, access_key,
-                       access_secret):
+def get_api_connection(consumer_key, consumer_secret, access_key=None,
+                       access_secret=None):
+    """
+    Authorize with Twitter and return API connection object.
+
+    If Access credentials are provided, create an App Access Token.
+    Otherwise, create an Application-only Access Token, which has limited
+    context but different API rate limit restrictions.
+    See https://developer.twitter.com/en/docs/basics/authentication/overview/application-only
+    """
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-    auth.set_access_token(access_key, access_secret)
+
+    if access_key and access_secret:
+        auth.set_access_token(access_key, access_secret)
 
     api = tweepy.API(auth, wait_on_rate_limit=True,
                      wait_on_rate_limit_notify=True)
