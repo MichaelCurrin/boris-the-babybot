@@ -1,8 +1,11 @@
 # Boris the BabyBot
-> Create and post tweets using the Twitter API.
+> Automation tool to run a simple Twitter bot
 
-This project could be modified easily to post for bot accounts but has been developed to tweet as the [Boris The BabyBot](https://twitter.com/boristhebabybot) Twitter account.
+- Twitter API.
+- Tweet from the command-line or with a cronjob.
+- Generate tweet message from your custom lists of messages, emojis and hashtags.
 
+This project could be modified easily to post for any given Twitter bot, thought this has been developed specifically to tweet as [Boris The BabyBot](https://twitter.com/boristhebabybot).
 
 ## Example Usage
 
@@ -19,7 +22,7 @@ See the tweet at: https://twitter.com/boristhebabybot
 
 ## Documentation
 
-You do need a Twitter developer account and API credentials in order to use this tool. This step is covered in the installation doc.
+To access the Twitter API through a script, you must apply for **Twitter developer account** and then copy API credentials from there to this project's config. See installation doc for more details
 
 - [Installation](/docs/installation.md)
 - [Usage](/docs/usage.md)
