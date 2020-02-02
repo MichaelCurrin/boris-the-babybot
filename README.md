@@ -4,6 +4,7 @@
 - Twitter API.
 - Tweet from the command-line or with a cronjob.
 - Generate tweet message from your custom lists of messages, emojis and hashtags.
+- Search for top tweets about a topic of interest and automatically favorite them.
 
 This project could be modified easily to post for any given Twitter bot, thought this has been developed specifically to tweet as [Boris The BabyBot](https://twitter.com/boristhebabybot).
 
