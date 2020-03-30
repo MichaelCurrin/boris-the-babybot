@@ -8,6 +8,7 @@
 
 This project could be modified easily to post for any given Twitter bot, thought this has been developed specifically to tweet as [Boris The BabyBot](https://twitter.com/boristhebabybot).
 
+
 ## Example Usage
 
 Create a random message using configured text files and post to twitter using configured tokens.
@@ -28,6 +29,7 @@ To access the Twitter API through a script, you must apply for **Twitter develop
 - [Installation](/docs/installation.md)
 - [Usage](/docs/usage.md)
 
+If you are interested in how this project works, see [/boris/lib/twitter.py](https://github.com/MichaelCurrin/boris-the-babybot/blob/master/boris/lib/twitter.py). That includes a module which connects to the post to the Twitter API and also combines the configured messages, emojis and hashtags randomly to generate a status.
 
 ## Am I allowed to make a bot?
 
