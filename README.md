@@ -9,9 +9,9 @@
 This project could be modified easily to post for any given Twitter bot, thought this has been developed specifically to tweet as [Boris The BabyBot](https://twitter.com/boristhebabybot).
 
 
-## Example Usage
+## Example usage
 
-Create a random message using configured text files and post to twitter using configured tokens.
+After configuring auth details and setting up configured content, you can run [boris/boris.py](/boris/boris.py) script on the command-line. This will generate a random sttatus using configured text files and then post it as a tweet to a Twitter account.
 
 ```bash
 $ ./boris.py
