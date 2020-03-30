@@ -1,5 +1,7 @@
 """
 Twitter library module.
+
+The most important logic here connecting to and posting to the Twitter API.
 """
 import random
 
@@ -33,11 +35,14 @@ def get_api_connection(consumer_key, consumer_secret, access_key=None,
 
 
 def make_msg():
+    """
+    Choose randomly to generate a message which includes emojis and hashtags.
+    """
     messaging = CONF['messaging']
 
     status = random.choice(messaging['statuses'])
 
-    # For sales pitch tweets, don't use add-ons.
+    # For sales pitch tweets, don't use add-on pieces.
     if CONF['website'] in status:
         msg = status
     else:
@@ -57,6 +62,8 @@ def make_msg():
 
 def show_statuses():
     """
+    Print configured available status messages to choose from. 
+    
     Note based on printing of statuses - some emojis seem to have a backspace
     character builtin so the following character will be hidden unless there is
     a space between them. This only seems to be an issue in the console - when
@@ -64,6 +71,7 @@ def show_statuses():
     Some characters like 🇧🇼 show as block characters in the terminal.
     """
     messaging = CONF['messaging']
+    
     for s in messaging['statuses']:
         print(s)
         print(repr(s))
@@ -71,6 +79,9 @@ def show_statuses():
 
 
 def show_emojis():
+    """
+    Print configured available emojis to choose from. 
+    """
     messaging = CONF['messaging']
     for e in messaging['emojis']:
         print(e)
@@ -79,7 +90,12 @@ def show_emojis():
 
 
 def _update_status(msg):
-    # TODO: Use class for context and reuse?
+    """
+    Post given message as tweet or "status" on the Twitter user's profile.
+    
+    This is the core logic of this project.
+    """
+    # TODO: Use class with context for reuse.
     api = get_api_connection(**CONF['twitter_credentials'])
 
     status = api.update_status(msg)
@@ -90,6 +106,9 @@ def _update_status(msg):
 
 
 def tweet(msg=None, dry_run=False):
+    """
+    Post given message or generate a message and post it to the Twitter user's profile.
+    """
     if not msg:
         msg = make_msg()
     print("Message: ")
