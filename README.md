@@ -27,7 +27,7 @@ See the tweet at: https://twitter.com/boristhebabybot
 
 This has been developed specifically to tweet as [Boris The BabyBot](https://twitter.com/boristhebabybot).
 
-Though, project could be configured easily to tweet for any Twitter account that you have access to.
+Though, project could be configured easily to tweet for any Twitter account that you have access to, whether your personal accoun or a decidated bot account.
 
 
 ## Authorization
