@@ -22,12 +22,19 @@ Updating timeline.
 See the tweet at: https://twitter.com/boristhebabybot
 ```
 
-## Documentation
+## Authorization
 
-To access the Twitter API through a script, you must apply for **Twitter developer account** and then copy API credentials from there to this project's config. See installation doc for more details
+To access the Twitter API, you must apply for a **Twitter developer account** - that takes time and effort. 
+
+You can copy the API credentials from your dev account to this project's local config on machine. See setup instructions in [Documentation](#documentation) for more details.
+
+
+## Documentation
 
 - [Installation](/docs/installation.md)
 - [Usage](/docs/usage.md)
+
+## Development
 
 If you are interested in how this project works, see the [boris/lib/twitter.py](https://github.com/MichaelCurrin/boris-the-babybot/blob/master/boris/lib/twitter.py) module. That includes functions to connect and post to the Twitter API. It also combines the configured messages, emojis and hashtags randomly to generate a status.
 
