@@ -3,10 +3,11 @@
 
 ## Features
 
-- Posts to Twitter API.
+- Connect to Twitter API.
 - Tweet from the command-line or with a cronjob.
 - Generate tweet message from your custom lists of messages, emojis and hashtags.
 - Search for top tweets about a topic of interest and automatically favorite them.
+- Built with Python3 and [tweepy](https://www.tweepy.org/).
 
 
 ## Example usage
@@ -25,9 +26,9 @@ See the tweet at: https://twitter.com/boristhebabybot
 
 ## Who is Boris?
 
-This has been developed specifically to tweet as [Boris The BabyBot](https://twitter.com/boristhebabybot).
+This project was developed to tweet random messages daily for the [Boris The BabyBot](https://twitter.com/boristhebabybot) account.
 
-Though, project could be configured easily to tweet for any Twitter account that you have access to, whether your personal accoun or a decidated bot account.
+Though, this project could be configured easily to tweet for any Twitter account that you have access to, whether your personal accoun or a decidated bot account.
 
 
 ## Authorization
