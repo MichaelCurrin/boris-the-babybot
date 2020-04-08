@@ -47,8 +47,6 @@ def test():
     """
     Pretty print the config data.
     """
-    import json
-
     conf = load_conf()
     print(json.dumps(conf, indent=4))
 

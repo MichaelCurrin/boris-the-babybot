@@ -3,7 +3,6 @@
 Main application file.
 """
 import argparse
-import os
 import sys
 
 import lib.twitter

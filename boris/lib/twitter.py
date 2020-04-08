@@ -62,8 +62,8 @@ def make_msg():
 
 def show_statuses():
     """
-    Print configured available status messages to choose from. 
-    
+    Print configured available status messages to choose from.
+
     Note based on printing of statuses - some emojis seem to have a backspace
     character builtin so the following character will be hidden unless there is
     a space between them. This only seems to be an issue in the console - when
@@ -80,7 +80,7 @@ def show_statuses():
 
 def show_emojis():
     """
-    Print configured available emojis to choose from. 
+    Print configured available emojis to choose from.
     """
     messaging = CONF["messaging"]
     for e in messaging["emojis"]:
@@ -92,7 +92,7 @@ def show_emojis():
 def _update_status(msg):
     """
     Post given message as tweet or "status" on the Twitter user's profile.
-    
+
     This is the core logic of this project.
     """
     # TODO: Use class with context for reuse.
