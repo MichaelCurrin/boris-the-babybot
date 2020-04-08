@@ -21,23 +21,24 @@ def main(args):
     )
 
     parser.add_argument(
-        "-d", "--dry-run",
-        action='store_true',
-        help="Print message then exit.",
+        "-d", "--dry-run", action="store_true", help="Print message then exit.",
     )
     parser.add_argument(
-        "-m", "--message",
+        "-m",
+        "--message",
         help="Use custom message. If flag is omitted, a random message will be used.",
     )
     parser.add_argument(
-        "-e", "--emojis",
-        action='store_true',
-        help="Preview all configured emojis, as printed and store values, then exit."
+        "-e",
+        "--emojis",
+        action="store_true",
+        help="Preview all configured emojis, as printed and store values, then exit.",
     )
     parser.add_argument(
-        "-s", "--statuses",
-        action='store_true',
-        help="Preview all configured statuses, as printed and store values, then exit."
+        "-s",
+        "--statuses",
+        action="store_true",
+        help="Preview all configured statuses, as printed and store values, then exit.",
     )
 
     args = parser.parse_args()
@@ -47,11 +48,8 @@ def main(args):
     elif args.statuses:
         lib.twitter.show_statuses()
     else:
-        lib.twitter.tweet(
-            args.message,
-            args.dry_run
-        )
+        lib.twitter.tweet(args.message, args.dry_run)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main(sys.argv[1:])

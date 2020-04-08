@@ -13,8 +13,9 @@ from . import load_conf
 CONF = load_conf()
 
 
-def get_api_connection(consumer_key, consumer_secret, access_key=None,
-                       access_secret=None):
+def get_api_connection(
+    consumer_key, consumer_secret, access_key=None, access_secret=None
+):
     """
     Authorize with Twitter and return API connection object.
 
@@ -28,8 +29,7 @@ def get_api_connection(consumer_key, consumer_secret, access_key=None,
     if access_key and access_secret:
         auth.set_access_token(access_key, access_secret)
 
-    api = tweepy.API(auth, wait_on_rate_limit=True,
-                     wait_on_rate_limit_notify=True)
+    api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
     return api
 
@@ -38,21 +38,21 @@ def make_msg():
     """
     Choose randomly to generate a message which includes emojis and hashtags.
     """
-    messaging = CONF['messaging']
+    messaging = CONF["messaging"]
 
-    status = random.choice(messaging['statuses'])
+    status = random.choice(messaging["statuses"])
 
     # For sales pitch tweets, don't use add-on pieces.
-    if CONF['website'] in status:
+    if CONF["website"] in status:
         msg = status
     else:
         msg_pieces = [status]
 
         if random.random() > 0.5:
-            emoji = random.choice(messaging['emojis'])
+            emoji = random.choice(messaging["emojis"])
             msg_pieces.append(emoji)
         if random.random() > 0.5:
-            hashtag = random.choice(messaging['hashtags'])
+            hashtag = random.choice(messaging["hashtags"])
             msg_pieces.append(hashtag)
 
         msg = " ".join(msg_pieces)
@@ -70,9 +70,9 @@ def show_statuses():
     copying the console text to Twitter status box then it expands again.
     Some characters like 🇧🇼 show as block characters in the terminal.
     """
-    messaging = CONF['messaging']
-    
-    for s in messaging['statuses']:
+    messaging = CONF["messaging"]
+
+    for s in messaging["statuses"]:
         print(s)
         print(repr(s))
         print()
@@ -82,8 +82,8 @@ def show_emojis():
     """
     Print configured available emojis to choose from. 
     """
-    messaging = CONF['messaging']
-    for e in messaging['emojis']:
+    messaging = CONF["messaging"]
+    for e in messaging["emojis"]:
         print(e)
         print(repr(e))
         print()
@@ -96,7 +96,7 @@ def _update_status(msg):
     This is the core logic of this project.
     """
     # TODO: Use class with context for reuse.
-    api = get_api_connection(**CONF['twitter_credentials'])
+    api = get_api_connection(**CONF["twitter_credentials"])
 
     status = api.update_status(msg)
     # TODO From config
@@ -124,5 +124,5 @@ def tweet(msg=None, dry_run=False):
     return msg
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(make_msg())
