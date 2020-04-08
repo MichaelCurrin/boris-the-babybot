@@ -15,7 +15,11 @@ format:
 
 # Lint with Pylint.
 lint:
-	pylint boris/
+	pylint boris
+
+	# OR for better import recognition but lack of working file links in lint
+	# output.
+	#cd boris && pylint *
 
 # Apply formatting and lint.
 c check: format lint
