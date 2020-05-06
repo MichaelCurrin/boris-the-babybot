@@ -7,7 +7,7 @@
 - Tweet from the command-line or with a cronjob.
 - Generate tweet message from your custom lists of messages, emojis and hashtags.
 - Search for top tweets about a topic of interest and automatically favorite them.
-- Built with Python3 and [tweepy](https://www.tweepy.org/).
+- Built with Python 3 and [tweepy](https://www.tweepy.org/).
 
 
 ## Example usage
