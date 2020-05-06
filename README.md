@@ -1,5 +1,8 @@
 # Boris the BabyBot
-> Automation tool to run a simple Twitter bot that posts random messages from a config
+> Tool to post daily random tweets for a Twitter bot
+
+- Made with [Python 3](https://python.org/) 
+- Made with [tweepy](https://www.tweepy.org/)
 
 
 ## Features
@@ -8,7 +11,6 @@
 - Tweet from the command-line or with a cronjob.
 - Generate tweet message from your custom lists of messages, emojis and hashtags.
 - Search for top tweets about a topic of interest and automatically favorite them.
-- Built with Python 3 and [tweepy](https://www.tweepy.org/).
 
 
 ## Example usage
@@ -23,6 +25,8 @@ Message:
 Updating timeline.
 See the tweet at: https://twitter.com/boristhebabybot
 ```
+
+The [unicron](https://github.com/MichaelCurrin/unicron/) repo is recommended for scheduling this project to ensure the bot posts daily as soon as it can, without posting multiple times in the day. Also, if it fails to post, it will retry later.
 
 
 ## Who is Boris?
