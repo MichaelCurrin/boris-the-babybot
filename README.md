@@ -1,5 +1,6 @@
 # Boris the BabyBot
-> Automation tool to run a simple Twitter bot
+> Automation tool to run a simple Twitter bot that posts random messages from a config
+
 
 ## Features
 
