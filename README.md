@@ -43,14 +43,14 @@ You can copy the API credentials from your dev account to this project's local c
 - [Installation](/docs/installation.md)
 - [Usage](/docs/usage.md)
 
+
 ## Development
 
 If you are interested in how this project works, see the [boris/lib/twitter.py](https://github.com/MichaelCurrin/boris-the-babybot/blob/master/boris/lib/twitter.py) module. That includes functions to connect and post to the Twitter API. It also combines the configured messages, emojis and hashtags randomly to generate a status.
+
 
 ## Am I allowed to make a bot?
 
 You _are_ allowed by Twitter to make a bot account, but one that follows Twitter's restrictions.
 
-Your bot can do things like tweet on a schedule, retweet other tweets (selectively but not in bulk) or repost external data or links such as blog posts. But you cannot use your bot to create tweets to users or reply to users, unless the users have explicitly given permission (such as by messaging your account or opting in within a website/app).
-
-If you do want to message other users, you can of course use your Twitter bot account in the browser without using the API.
+I cover this in more details in the [Bots](https://michaelcurrin.github.io/python-twitter-guide/#/policies?id=bots) section of my Python Twitter Guide project.
