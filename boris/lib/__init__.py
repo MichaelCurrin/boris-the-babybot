@@ -37,7 +37,7 @@ def load_conf():
     hashtags = read_text(os.path.join(ETC_DIR, "hashtags.txt"))
     emojis = read_text(os.path.join(ETC_DIR, "emojis.txt"))
 
-    conf["messaging"] = dict(statuses=statuses, hashtags=hashtags, emojis=emojis,)
+    conf["messaging"] = dict(statuses=statuses, hashtags=hashtags, emojis=emojis)
     conf["website"] = "https://boristhebabybot.org"
 
     return conf
