@@ -10,6 +10,7 @@ $ source venv/bin/activate
 $ cd boris
 ```
 
+
 ## Help
 
 ```
@@ -32,24 +33,36 @@ optional arguments:
                         values, then exit.
 ```
 
-## Commands
+
+## Tweet
+
+Tweet random message.
 
 ```bash
 $ ./boris
 ```
 
+Show message and don't tweet.
+
 ```bash
 $ ./boris --dry-run
 ```
+
+Tweet custom message.
 
 ```bash
 $ ./boris --message 'My custom tweet message'
 ```
 
+
+
+## Check configured content
+
 ```bash
 $ ./boris --emojis
 ```
 
+This can b
 ```bash
 $ ./boris --statuses
 ```
