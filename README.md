@@ -1,7 +1,7 @@
 # Boris the BabyBot
 > Tool to post daily random tweets for a Twitter bot
 
-- Made with [Python 3](https://python.org/) 
+- Made with [Python 3](https://python.org/)
 - Made with [tweepy](https://www.tweepy.org/)
 
 
@@ -33,12 +33,12 @@ The [unicron](https://github.com/MichaelCurrin/unicron/) repo is recommended for
 
 This project was developed to tweet random messages daily for the [Boris The BabyBot](https://twitter.com/boristhebabybot) account.
 
-Though, this project could be configured easily to tweet for any Twitter account that you have access to, whether your personal accoun or a decidated bot account.
+Though, this project could be configured easily to tweet for any Twitter account that you have access to, whether your personal account or a dedicated bot account.
 
 
 ## Authorization
 
-To access the Twitter API, you must apply for a **Twitter developer account** - that takes time and effort. 
+To access the Twitter API, you must apply for a **Twitter developer account** - that takes time and effort.
 
 You can copy the API credentials from your dev account to this project's local config on machine. See setup instructions in [Documentation](#documentation) for more details.
 
@@ -46,6 +46,7 @@ You can copy the API credentials from your dev account to this project's local c
 ## Documentation
 
 - [Installation](/docs/installation.md)
+- [Configuration](/docs/configuration.md)
 - [Usage](/docs/usage.md)
 
 
@@ -59,3 +60,8 @@ If you are interested in how this project works, see the [boris/lib/twitter.py](
 You _are_ allowed by Twitter to make a bot account, but one that follows Twitter's restrictions.
 
 I cover this in more details in the [Bots](https://michaelcurrin.github.io/python-twitter-guide/#/policies?id=bots) section of my Python Twitter Guide project.
+
+
+## License
+
+Released under [MIT](/LICENSE).
