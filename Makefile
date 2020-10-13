@@ -1,11 +1,14 @@
+default: install install-dev
+
 help:
 	@egrep '(^\S)|^$$' Makefile
 
 
-# Install all dependencies.
 install:
 	pip install pip --upgrade
 	pip install -r requirements.txt
+
+install-dev:
 	pip install -r requirements-dev.txt
 
 
@@ -23,3 +26,7 @@ lint:
 
 # Apply formatting and lint.
 c check: format lint
+
+
+tweet:
+	boris/boris.py
