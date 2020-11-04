@@ -8,14 +8,14 @@
 ## Features
 
 - Connect to Twitter API.
-- Tweet from the command-line or with a cronjob.
-- Generate tweet message from your custom lists of messages, emojis and hashtags.
+- Tweet from the command-line or using a scheduled cron job.
+- Generate a tweet message from your custom lists of messages, emojis and hashtags.
 - Search for top tweets about a topic of interest and automatically favorite them.
 
 
 ## Example usage
 
-After configuring auth details and setting up configured content, you can run [boris/boris.py](/boris/boris.py) script on the command-line. This will generate a random sttatus using configured text files and then post it as a tweet to a Twitter account.
+After configuring auth details and setting up configured content, you can run [boris/boris.py](/boris/boris.py) script on the command-line. This will generate a random status using configured text files and then post it as a tweet to a Twitter account.
 
 ```bash
 $ ./boris.py
