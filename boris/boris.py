@@ -20,7 +20,10 @@ def main(args):
     )
 
     parser.add_argument(
-        "-d", "--dry-run", action="store_true", help="Print message then exit.",
+        "-d",
+        "--dry-run",
+        action="store_true",
+        help="Print message then exit.",
     )
     parser.add_argument(
         "-m",

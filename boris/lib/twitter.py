@@ -72,9 +72,9 @@ def show_statuses():
     """
     messaging = CONF["messaging"]
 
-    for s in messaging["statuses"]:
-        print(s)
-        print(repr(s))
+    for status in messaging["statuses"]:
+        print(status)
+        print(repr(status))
         print()
 
 
@@ -83,9 +83,9 @@ def show_emojis():
     Print configured available emojis to choose from.
     """
     messaging = CONF["messaging"]
-    for e in messaging["emojis"]:
-        print(e)
-        print(repr(e))
+    for emoji in messaging["emojis"]:
+        print(emoji)
+        print(repr(emoji))
         print()
 
 
