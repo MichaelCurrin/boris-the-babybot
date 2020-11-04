@@ -11,7 +11,7 @@ $ cd boris/etc
 Create a local config. This will not versioned and it should not be shared with anyone.
 
 ```bash
-$ cp config.tmpl.yml config.local.yml
+$ cp config.template.yml config.local.yml
 ```
 
 In the local file, replace the placeholder API credentials with your own, from your Twitter developer account's app.
