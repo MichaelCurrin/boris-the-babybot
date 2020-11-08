@@ -1,5 +1,5 @@
-# Boris the BabyBot
-> Tool to post daily random tweets for a Twitter bot
+# Boris
+> Tool to post daily random tweets for a responsible Twitter bot
 
 - Made with [Python 3](https://python.org/)
 - Made with [tweepy](https://www.tweepy.org/)
@@ -15,7 +15,7 @@
 
 ## Example usage
 
-After configuring auth details and setting up configured content, you can run [boris/boris.py](/boris/boris.py) script on the command-line. This will generate a random status using configured text files and then post it as a tweet to a Twitter account.
+After configuring auth details and setting up configured content, you can run [boris.py](/boris/boris.py) script on the command-line. This will generate a random status using configured text files and then post it as a tweet to a Twitter account.
 
 ```bash
 $ ./boris.py
