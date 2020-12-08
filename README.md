@@ -1,13 +1,16 @@
 # Boris
 > Tool to post daily random tweets for a responsible Twitter bot
 
-- Made with [Python 3](https://python.org/)
-- Made with [tweepy](https://www.tweepy.org/)
+![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/boris-the-babybot?include_prereleases&sort=semver)](https://github.com/MichaelCurrin/boris-the-babybot/releases/)
+[![License - MIT](https://img.shields.io/badge/License-MIT-blue)](#license)
+
+[![Python - >=3.6](https://img.shields.io/badge/Python->=3.6-blue?logo=python&logoColor=white)](https://python.org)
+[![dependency - tweepy](https://img.shields.io/badge/dependency-tweepy-blue)](https://pypi.org/project/tweepy)
 
 
 ## Features
 
-- Connect to Twitter API.
+- Connect to the Twitter API.
 - Tweet from the command-line or using a scheduled cron job.
 - Generate a tweet message from your custom lists of messages, emojis and hashtags.
 - Search for top tweets about a topic of interest and automatically favorite them.
@@ -45,9 +48,7 @@ You can copy the API credentials from your dev account to this project's local c
 
 ## Documentation
 
-- [Installation](/docs/installation.md)
-- [Configuration](/docs/configuration.md)
-- [Usage](/docs/usage.md)
+[![view - Documentation](https://img.shields.io/badge/view-Documentation-blue)](/docs/)
 
 
 ## Development
