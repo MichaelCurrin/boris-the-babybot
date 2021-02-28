@@ -1,5 +1,8 @@
 default: install install-dev
 
+all: install install-dev fmt-check lint
+
+
 help:
 	@grep '^[a-z]' Makefile
 
@@ -12,13 +15,14 @@ install-dev:
 	pip install -r requirements-dev.txt
 
 
-format:
+fmt:
 	black .
-
+fmt-check:
+	black . --diff --check
 lint:
 	export PYTHONPATH=boris && pylint boris
 
-fix: format lint
+fix: fmt lint
 
 
 tweet:
