@@ -1,7 +1,7 @@
 default: install install-dev
 
 help:
-	@egrep '(^\S)|^$$' Makefile
+	@grep '^[a-z]' Makefile
 
 
 install:
@@ -18,7 +18,7 @@ format:
 lint:
 	export PYTHONPATH=boris && pylint boris
 
-c check: format lint
+fix: format lint
 
 
 tweet:
