@@ -1,18 +1,38 @@
 # Installation
 
-
-## Setup a Python 3 virtual environment
-
-Follow instructions in this [gist](https://gist.github.com/MichaelCurrin/3a4d14ba1763b4d6a1884f56a01412b7).
+Follow instructions in this [Setup a Python 3 virtual environment](https://gist.github.com/MichaelCurrin/3a4d14ba1763b4d6a1884f56a01412b7) to continue below.
 
 
-## Get a Twitter developer account
+## Install system dependencies
+
+Install Python 3 - see [instructions](https://gist.github.com/MichaelCurrin/57caae30bd7b0991098e9804a9494c23).
 
 
-Without a developer account, you cannot create the app tokens that the Twitter API needs for authentication. These are needed whenever you do requests such as fetch or create Twitter content.
+## Clone
 
-You need to apply for a developer account on Twitter, including a written a motivation on how you will use the account. This can take a few days and a few emails to Twitter if you are not approved immediately.
+Clone the repo.
 
-- [How to apply for a Twitter Developer account](https://www.extly.com/docs/autotweetng_joocial/tutorials/how-to-auto-post-from-joomla-to-twitter/apply-for-a-twitter-developer-account/#apply-for-a-developer-account) blog post
-- [Getting Started](https://developer.twitter.com/en/docs/basics/getting-started) guide for using the Twitter API.
-- [Apps](https://developer.twitter.com/en/apps) list page for your Twitter account
+```sh
+$ git clone git@github.com:MichaelCurrin/boris-the-babybot.git
+```
+
+
+## Install project packages
+
+Create a virtual environment.
+
+```sh
+$ python3 -m venv venv
+```
+
+Activate it.
+
+```sh
+$ source venv/bin/activate
+```
+
+Install packages into it.
+
+```sh
+$ make install
+```
