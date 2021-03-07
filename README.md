@@ -2,7 +2,7 @@
 > Tool to post daily random tweets for a responsible Twitter bot
 
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/boris-the-babybot?include_prereleases&sort=semver)](https://github.com/MichaelCurrin/boris-the-babybot/releases/)
-[![License - MIT](https://img.shields.io/badge/License-MIT-blue)](#license)
+[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 
 [![Python - >=3.6](https://img.shields.io/badge/Python->=3.6-blue?logo=python&logoColor=white)](https://python.org)
 [![dependency - tweepy](https://img.shields.io/badge/dependency-tweepy-blue)](https://pypi.org/project/tweepy)
