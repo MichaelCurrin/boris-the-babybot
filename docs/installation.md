@@ -14,6 +14,7 @@ Clone the repo.
 
 ```sh
 $ git clone git@github.com:MichaelCurrin/boris-the-babybot.git
+$ cd boris-the-babybot
 ```
 
 
