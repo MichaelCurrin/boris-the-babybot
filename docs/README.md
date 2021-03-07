@@ -1,5 +1,6 @@
 # Boris documentation
 
-- [Installation](installation.md)
-- [Configuration](configuration.md)
-- [Usage](usage.md)
+1. [Installation](installation.md)
+2. [Token](#token)
+3. [Configuration](configuration.md)
+4. [Usage](usage.md)
