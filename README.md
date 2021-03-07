@@ -50,7 +50,7 @@ You can copy the API credentials from your dev account to this project's local c
 
 <div align="center">
   
-[![view - Documentation](https://img.shields.io/badge/view-Project-documentation-blue?style=for-the-badge)](/docs/)
+[![view - Documentation](https://img.shields.io/badge/view-Project_documentation-blue?style=for-the-badge)](/docs/)
 
 </div>
 
