@@ -3,7 +3,7 @@ default: install install-dev
 all: install install-dev fmt-check lint
 
 
-help:
+h help:
 	@grep '^[a-z]' Makefile
 
 
