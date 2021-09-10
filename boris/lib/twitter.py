@@ -28,9 +28,7 @@ def get_api_connection(
     if access_key and access_secret:
         auth.set_access_token(access_key, access_secret)
 
-    api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
-
-    return api
+    return tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
 
 def make_msg():
@@ -41,7 +39,8 @@ def make_msg():
 
     status = random.choice(messaging["statuses"])
 
-    # For sales pitch tweets, don't use add-on pieces.
+    # For promot tweets about the website, don't use add-on pieces, keep it
+    # light.
     if CONF["website"] in status:
         msg = status
     else:
@@ -50,6 +49,7 @@ def make_msg():
         if random.random() > 0.5:
             emoji = random.choice(messaging["emojis"])
             msg_pieces.append(emoji)
+
         if random.random() > 0.5:
             hashtag = random.choice(messaging["hashtags"])
             msg_pieces.append(hashtag)
@@ -82,6 +82,7 @@ def show_emojis():
     Print configured available emojis to choose from.
     """
     messaging = CONF["messaging"]
+
     for emoji in messaging["emojis"]:
         print(emoji)
         print(repr(emoji))
@@ -94,12 +95,13 @@ def _update_status(msg):
 
     This is the core logic of this project.
     """
-    # TODO: Use class with context for reuse.
-    api = get_api_connection(**CONF["twitter_credentials"])
+    credentials = CONF["twitter_credentials"]
+    handle = CONF["handle"]
+
+    api = get_api_connection(**credentials)
 
     status = api.update_status(msg)
-    # TODO From config
-    print("See the tweet at: https://twitter.com/boristhebabybot")
+    print(f"See the tweet at: https://twitter.com/{handle}")
 
     return status
 
@@ -110,6 +112,7 @@ def tweet(msg=None, dry_run=False):
     """
     if not msg:
         msg = make_msg()
+
     print("Message: ")
     print(repr(msg))
     print()
