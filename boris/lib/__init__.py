@@ -6,9 +6,7 @@ import json
 import os
 
 import tweepy
-
 import yaml
-
 
 APP_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 ETC_DIR = os.path.join(APP_DIR, "etc")
@@ -38,7 +36,6 @@ def load_conf():
     emojis = read_text(os.path.join(ETC_DIR, "emojis.txt"))
 
     conf["messaging"] = dict(statuses=statuses, hashtags=hashtags, emojis=emojis)
-    conf["website"] = "https://boristhebabybot.org"
 
     return conf
 

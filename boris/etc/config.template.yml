@@ -3,3 +3,5 @@ twitter_credentials:
   consumer_secret:
   access_key:
   access_secret:
+
+website: "https://boristhebabybot.org"
