@@ -9,7 +9,6 @@ import tweepy
 
 from . import load_conf
 
-
 CONF = load_conf()
 
 
@@ -17,7 +16,7 @@ def get_api_connection(
     consumer_key, consumer_secret, access_key=None, access_secret=None
 ):
     """
-    Authorize with Twitter and return API connection object.
+    Authenticate with Twitter API and return a connection object.
 
     If Access credentials are provided, create an App Access Token.
     Otherwise, create an Application-only Access Token, which has limited
