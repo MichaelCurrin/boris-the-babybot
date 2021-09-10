@@ -1,2 +1,2 @@
-tweepy
-pyyaml
+tweepy~=3.9
+PyYAML~=5.3
