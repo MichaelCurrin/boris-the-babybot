@@ -2,7 +2,7 @@
     "terminal.integrated.cwd": "boris",
     "code-runner.cwd": "boris",
 
-    "python.pythonPath": "venv/bin/python",
+    "python.defaultInterpreterPath": "venv/bin/python",
 
     "editor.rulers": [80],
 }
