@@ -6,7 +6,7 @@
 $ cd boris/etc
 ```
 
-## Setup config file.
+## Set up config file.
 
 Create a local config. This will not versioned and it should not be shared with anyone.
 
@@ -18,7 +18,6 @@ In the local file, replace the placeholder API credentials with your own, from y
 
 
 ## Create Tweet messaging content
-
 
 ```bash
 $ touch statuses.txt hashtags.txt emojis.txt

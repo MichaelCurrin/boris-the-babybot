@@ -1,6 +1,6 @@
 # Installation
 
-Follow instructions in this [Setup a Python 3 virtual environment](https://gist.github.com/MichaelCurrin/3a4d14ba1763b4d6a1884f56a01412b7) to continue below.
+Follow instructions in this [Set up a Python 3 virtual environment](https://gist.github.com/MichaelCurrin/3a4d14ba1763b4d6a1884f56a01412b7) to continue below.
 
 
 ## Install system dependencies

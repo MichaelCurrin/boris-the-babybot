@@ -55,7 +55,6 @@ $ ./boris --message 'My custom tweet message'
 ```
 
 
-
 ## Check configured content
 
 ```bash
