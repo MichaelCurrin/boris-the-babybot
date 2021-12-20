@@ -4,7 +4,7 @@
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/boris-the-babybot?include_prereleases&sort=semver)](https://github.com/MichaelCurrin/boris-the-babybot/releases/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 
-[![Python - >=3.6](https://img.shields.io/badge/Python->=3.6-blue?logo=python&logoColor=white)](https://python.org)
+[![Python](https://img.shields.io/badge/Python->=3.6-blue?logo=python&logoColor=white)](https://python.org)
 [![dependency - tweepy](https://img.shields.io/badge/dependency-tweepy-blue)](https://pypi.org/project/tweepy)
 
 
@@ -20,7 +20,7 @@
 
 After configuring auth details and setting up configured content, you can run [boris.py](/boris/boris.py) script on the command-line. This will generate a random status using configured text files and then post it as a tweet to a Twitter account.
 
-```bash
+```console
 $ ./boris.py
 Message:
 'Boris is replacing all his internet passwords with passwords of at least 20 characters. #GDPR'
@@ -50,7 +50,7 @@ You can copy the API credentials from your dev account to this project's local c
 
 <div align="center">
   
-[![view - Documentation](https://img.shields.io/badge/view-Project_documentation-blue?style=for-the-badge)](/docs/)
+[![Documentation](https://img.shields.io/badge/view-Project_documentation-blue?style=for-the-badge)](/docs/)
 
 </div>
 
