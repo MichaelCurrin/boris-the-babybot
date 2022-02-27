@@ -17,7 +17,7 @@ def read_text(path):
     """
     Read a file and return cleaned rows of content as a list.
     """
-    with open(path) as f_in:
+    with open(path, encoding="utf-8") as f_in:
         lines = f_in.read().splitlines()
 
     return [line.replace("\\n", "\n") for line in lines if line]
@@ -28,7 +28,7 @@ def load_conf():
     Read config files and return dict of config data.
     """
     yaml_path = os.path.join(ETC_DIR, "config.local.yml")
-    with open(yaml_path) as f_in:
+    with open(yaml_path, encoding="utf-8") as f_in:
         conf = yaml.safe_load(f_in)
 
     statuses = read_text(os.path.join(ETC_DIR, "statuses.txt"))
