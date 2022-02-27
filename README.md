@@ -4,7 +4,7 @@
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/boris-the-babybot?include_prereleases&sort=semver)](https://github.com/MichaelCurrin/boris-the-babybot/releases/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 
-[![Python - >=3.6](https://img.shields.io/badge/Python->=3.6-blue?logo=python&logoColor=white)](https://python.org)
+[![Python](https://img.shields.io/badge/Python->=3.6-blue?logo=python&logoColor=white)](https://python.org)
 [![dependency - tweepy](https://img.shields.io/badge/dependency-tweepy-blue)](https://pypi.org/project/tweepy)
 
 
@@ -49,7 +49,7 @@ You can copy the API credentials from your dev account to this project's local c
 ## Documentation
 
 <div align="center">
-  
+
 [![view - Documentation](https://img.shields.io/badge/view-Project_documentation-blue?style=for-the-badge)](/docs/)
 
 </div>
