@@ -49,7 +49,7 @@ You can copy the API credentials from your dev account to this project's local c
 ## Documentation
 
 <div align="center">
-  
+
 [![Documentation](https://img.shields.io/badge/view-Project_documentation-blue?style=for-the-badge)](/docs/)
 
 </div>
