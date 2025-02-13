@@ -7,6 +7,7 @@
 [![Python](https://img.shields.io/badge/Python->=3.6-blue?logo=python&logoColor=white)](https://python.org)
 [![dependency - tweepy](https://img.shields.io/badge/dependency-tweepy-blue)](https://pypi.org/project/tweepy)
 
+_**Archive notice:** The Twitter account is still active but the automated posts via Python are inactive since about 2021 and this repo is no longer maintained._
 
 ## Features
 
